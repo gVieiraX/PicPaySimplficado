@@ -29,4 +29,5 @@ public class Transaction {
     @JoinColumn(name = "payee_id")
     private User payee;
     private LocalDateTime timestamp;
+
 }
