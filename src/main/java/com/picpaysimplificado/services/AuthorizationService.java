@@ -19,7 +19,7 @@ public class AuthorizationService {
     @Value("${app.authorizationApi}")
     private String authApiUrl;
 
-    public boolean authorizeTransaction(User sender, BigDecimal value){
+    public boolean authorizeTransaction(User payer, BigDecimal value){
         ResponseEntity<Map> authorizationResponse = restTemplate.getForEntity(this.authApiUrl, Map.class);
 
         if(authorizationResponse.getStatusCode() == HttpStatus.OK){

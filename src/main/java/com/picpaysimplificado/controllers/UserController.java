@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController()
 @RequestMapping("/users")
 public class UserController {
 
@@ -29,5 +29,4 @@ public class UserController {
        List<User> users = this.userService.getAllUsers();
        return new ResponseEntity<>(users, HttpStatus.OK);
     }
-
 }
