@@ -1,18 +1,9 @@
 # Authentication API
 
 
-Este projeto é uma API construída usando Java, Spring Framework, e H2 como banco de dados.
+Este projeto teve como base o [Desafio Back-end PicPay](https://github.com/PicPay/picpay-desafio-backend ), o PicPay Simplficado (plataforma de  pagamentos simplificada) , é uma API construída usando Java, Spring Framework, e H2 como banco de dados.
 
-
-## Table of Contents
-
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [API Endpoints](#api-endpoints)
-- [Database](#database)
-
-## Installation
+## Instalação
 
 1. Clone o repositório:
 
@@ -23,10 +14,11 @@ git clone https://github.com/gVieiraX/PicPaySimplficado.git
 
 2. Instale as dependências com Maven
 
-## Usage
+## Uso
 
 1. Inicie a aplicação com Maven
-2.A API estará acessível em: http://localhost:8080
+
+2. A API estará acessível em: http://localhost:8080
 
 
 ## API Endpoints
@@ -90,9 +82,6 @@ POST /transactions - Registra uma nova transação entre usuários (COMMON para 
   "value": 5
 }
 ```
-
-## Database
-Esse projeto [H2 Database](https://www.h2database.com/html/tutorial.html) como banco de dados. 
 
 
 
